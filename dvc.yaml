@@ -18,6 +18,12 @@ artifacts:
     - segmentation
     - satellite-images
     - shufflenet_v2_x2_0
+  pool_segmentation:
+    path: models/model.pkl
+    desc: pool segmentation model that uses computer vision
+    type: model
+    labels:
+    - cv
 stages:
   data_split:
     cmd: python src/data_split.py
